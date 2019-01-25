@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+}
+
+img {
+}
+
+.blur:hover {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+.blur {
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+  transition: 2s ease-in-out;
+}
+
+#one {
+	width: 100px;
+}
