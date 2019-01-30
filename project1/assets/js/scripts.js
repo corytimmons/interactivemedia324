@@ -1,7 +1,8 @@
 $(document).ready(function(){
-  $('.blur').hover(
-  		function(){ $(this).removeClass('blur') }
-       function(){ $(this).addClass('sharp') },
-       
+  $('.image').hover(function() {
+     $('.image').fadeOut();
+  }, function() {
+     $('.image').fadeIn();
+  });
   });
 });

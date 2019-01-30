@@ -8,51 +8,41 @@ body {
 }
 
 .canvas {
-	width: 100vw;
-	height: 100vh;
-	margin: 0px auto;
+	width: 1260px;
+	margin: 10px auto;
+  padding: 10px;
 	background: white;
 	position: relative;
-}
-img {
-	display: grid;
-}
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-auto-rows: auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+ }
 
-.sharp {
-  -webkit-filter: blur(0);
-  filter: blur(0);
-  -webkit-transition: 2s ease-in-out;
-  transition: 2s ease-in-out;
-}
-.blur {
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
-  transition: 2s ease-in-out;
-  width: 200px;
-}
-.desc {
-	display: initial ;
+img {
+	display: block;
 }
 
 .container {
   position: relative;
   width: 50%;
+  display: inline-block;
+}
+
+.container:hover .overlay {
+  opacity: 0;
 }
 
 .image {
   display: block;
-  width: 200px;
+  width: 300px;
   height: auto;
- width: 200px;
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
   transition: 2s ease-in-out
 }
 
 .image:hover {
   opacity: 1;
-    -webkit-filter: blur(0);
-  filter: blur(0);
  -webkit-transition: 2s ease-in-out;
   transition: 2s ease-in-out;
 }
@@ -65,20 +55,15 @@ img {
   left: 0;
   right: 0;
   height: 100%;
-  width: 200px;
-  opacity: 1.0;
+  width: 300px;
+  opacity: 0.95;
   transition: .5s ease;
-  background-color: #FFFFFF;
-;
+  background-color: #EEEEEE;
   color: black;
 }
 
-.container:hover .overlay {
-  opacity: 0;
-}
-
 .text {
-  color: white;
+  color: black;
   font-size: 20px;
   position: absolute;
   top: 50%;
