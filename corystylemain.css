@@ -1,9 +1,36 @@
 body {
 	margin: 5vw;
 	font-family: sans-serif;
+	display: grid;
+	background: black;
+	color: white;
 }
 
 a {
 	text-decoration: none;
-
+	color: teal;
 }
+
+a:hover {
+	color: pink;
+}
+
+img {
+	display: grid;
+}
+
+h1 {
+	font-size: 5vh;
+}
+h2 {
+	font-size: 4vh;
+}
+
+.left {
+	display: grid;
+	grid-column-start: 1;
+}
+
+.right {
+	display: grid;
+	grid-column-start: 2;
