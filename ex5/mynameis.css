@@ -1,0 +1,90 @@
+body {
+  background-size: 350px auto;
+  background-repeat: repeat;
+  font-family: 'Palanquin Dark', sans-serif;
+    color:white;
+}
+img {
+  height: 100vh;
+  position: absolute;
+  margin-bottom:-10vh;
+}
+
+img:hover {
+
+}
+
+h1 {
+  text-shadow: 1vh 1vw #333;
+  font-size: 10vh;
+  margin-left: 25vh;
+  margin-top:25vh;
+/*  text-decoration:overline;
+  text-decoration-color: white;
+  text-decoration-style: wavy;*/
+  line-height: 0.95;
+  letter-spacing: 1px;
+  text-shadow: black 2px;
+}
+div {
+  background-color:white;
+  opacity: 0.5;
+  width:80vw;
+  height: 80vh;
+}
+
+a {
+text-decoration: none;
+color: cyan;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color:hotpink;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
+
+.one {
+    background-image: url("./images/bg1.gif");
+}
+.two {
+    background-image: url("./images/bg2.gif");
+    background-size: 650px auto;;
+}
+.three {
+    background-image: url("./images/bg3.gif");
+}
+.four {
+    background-image: url("./images/bg4.gif");
+}
+.five{
+    background-image: url("./images/bg5.gif");
+}
+.six {
+    background-image: url("./images/bg6.gif");
+}
+.seven {
+    background-image: url("./images/bg7.gif");
+}
+.eight {
+    background-image: url("./images/bg8.gif");
+}
+.nine {
+    background-image: url("./images/bg9.gif");
+}
+.ten {
+    background-image: url("./images/bg10.gif");
+}
