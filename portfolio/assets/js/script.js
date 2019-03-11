@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    $(".reset").click(function(){
+    $(".b").hide();
+    $(".c").hide();
+  });
+
+
   $(".a").click(function(){
     $(".imagea").show();
     $(".b").show();
