@@ -1,0 +1,87 @@
+
+body {
+  background-size: 350px auto;
+  background-repeat: repeat;
+/*  background-image: url("./images/bg10.gif");*/
+	font-family: 'Palanquin Dark', sans serif;
+  font-size: 36px;
+  color:white;
+  line-height: 1.1em;
+ }
+
+ body::-webkit-scrollbar{
+    background-color: cyan;
+    color: transparent;
+    width: 2.5vw;
+   
+    opacity: 0;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: hotpink; 
+    border-radius: 1vw;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  color: white;
+  border: white;
+}
+.name {
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 999;
+    width: 6vh;
+  }
+
+.canvas {
+	width: 80vw;
+  height: auto;
+	margin-left: 100px;
+  padding: 25px;
+	background-image: 
+    linear-gradient(to bottom, hotpink, black);
+	position: absolute;
+  border-radius: 25px;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.a:hover ~ .imagea { 
+  opacity: 1;
+}
+.imagea {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.text {
+  position: relative;
+  top: 0
+  left: 0
+
+}
+
+
+/*Media queries*/
+
+/*@media screen and (max-width: 1280px) {
+.canvas {
+  width: 1180px;
+  margin: 10px auto;
+  padding: 25px;
+  grid-template-columns: 280px 280px 280px 280px;
+  border-radius: 5px;
+ }
+.overlay {
+  width: 280px;
+}
+.image {
+   width: 280px;
+  }
+h1 {
+  font-size: 5vh;
+}
