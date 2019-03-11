@@ -3,14 +3,14 @@ body {
   background-size: 350px auto;
   background-repeat: repeat;
   background-image: url("./images/bgstatic.png");
-	font-family: 'Palanquin Dark', sans serif;
+	font-family: 'Archivo Black', sans-serif;
   font-size: 2vw;
-  color:white;
+  color:black;
   line-height: 1.1em;
  }
 
  body::-webkit-scrollbar{
-    background-color: cyan;
+ background-image: url("./images/bgstatic.png");
     color: transparent;
     width: 2.5vw;
     opacity: 0;
@@ -35,7 +35,14 @@ h1 {
     z-index: 999;
     width: 6vh;
   }
-
+.button {
+  border: 1vw black dotted;
+}
+.reset {
+  color: green;
+  font-size:6vh;
+  text-shadow: 0.2vh 0.2vw black;
+}
 .menu {
     position: fixed;
     top: 0;
@@ -47,16 +54,18 @@ h1 {
 	width: 80vw;
   height: auto;
 	margin-left: 100px;
-  padding: 25px;
+  padding: 4vw;
 	background-image: 
-    linear-gradient(to bottom, hotpink, black);
+    linear-gradient(to bottom, lightgrey, white);
 	position: absolute;
-  border-radius: 25px;
   display: flex;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap:1vw;
   grid-row-gap:1vw;
+}
+.clickable:hover {
+  color:yellow;
   cursor:crosshair;
 }
 .reading {
@@ -70,7 +79,7 @@ h1 {
   grid-column-start: 1;
   grid-column-end: 3;
   line-height: 1.1;
-font-family: 'Palanquin', sans-serif;
+font-family: 'Archivo', sans-serif;
 }
 
 .photography {
@@ -101,7 +110,7 @@ font-family: 'Palanquin', sans-serif;
 }
 a {
   text-decoration: none;
-  color: yellow;
+  color: goldenrod;
 }
 
 a:hover {
