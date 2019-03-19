@@ -1,0 +1,280 @@
+
+body {
+  background-size: 350px auto;
+  background-repeat: repeat;
+  background-image: url("./images/bgstatic.png");
+	font-family: sans-serif;
+  font-size: 2vw;
+  color:black;
+ }
+
+body::-webkit-scrollbar{
+    background-color:cyan;
+    color: cyan;
+    width: 2.5vw;
+    opacity: 0;
+  }
+
+body::-webkit-scrollbar-thumb {
+    background: hotpink; 
+    border-radius: 1vw;
+}
+
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3vh;
+  color: white;
+  border: white;
+}
+
+p {
+  font-size: 2vh;
+}
+
+ a {
+  text-decoration: none;
+  color: purple;
+ }
+
+ a:hover {
+  color:lightgreen;
+ }
+
+a:visited {
+  text-decoration:none;
+  color:black;
+}
+
+/*Menu and buttons*/
+
+.name {
+    position: fixed;
+    top: 5.5vh;
+    left:0;
+    z-index: 999;
+    width: 6vh;
+  }
+.category {
+  font-weight: bold;
+}
+
+.menu {
+    position: fixed;
+    top: 5.5vh;
+    right:0;
+    z-index: 999;
+    width: 10vh;
+    line-height: 2vh
+  }
+ 
+.resetimage:hover .reset {
+  display:block;
+}
+
+.expandimage:hover .expand {
+  display: block;
+}
+
+/*Main canvas*/
+
+.canvas {
+	width: 80vw;
+  height: auto;
+	margin-left: 100px;
+  margin-top: 5vh;
+  margin-bottom:5vh;
+  padding: 4vw;
+  object-fit: scale-down;
+	background-image: 
+    linear-gradient(to bottom, lightgrey, darkgrey);
+	position: absolute;
+  display: flex;
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr 1fr;
+  grid-column-gap:2vw;
+  grid-row-gap:1vw;
+  grid-template-areas: 
+  'text1 item1 item2 item3'
+  'text1 item4 item5 item6'
+  'text1 item7 item8 item9'
+  'text1 item10 item11 item12'
+  'text1 item13 text14 text15';
+}
+
+.text1 { grid-area: text1; }
+
+.item1 { grid-area: item1; object-fit: scale-down; }
+.item2 { grid-area: item2; object-fit: scale-down; }
+.item3 { grid-area: item3; object-fit: scale-down; }
+.item4 { grid-area: item4; object-fit: scale-down; }
+.item5 { grid-area: item5; object-fit: scale-down; }
+.item6 { grid-area: item6; object-fit: scale-down; }
+.item7 { grid-area: item7; object-fit: scale-down; }
+.item8 { grid-area: item8; object-fit: scale-down; }
+.item9 { grid-area: item9; object-fit: scale-down; }
+.item10 { grid-area: item10; object-fit: scale-down; }
+.item11 { grid-area: item11; object-fit: scale-down; }
+.item12 { grid-area: item12; object-fit: scale-down; }
+.item13 { grid-area: item13; object-fit: scale-down; }
+.item14 { grid-area: item14; object-fit: scale-down; }
+.item15 { grid-area: item15; object-fit: scale-down; }
+.item16 { grid-area: item16; object-fit: scale-down; }
+
+.canvas img {
+  object-fit: scale-down;
+}
+
+#duplicityCarousel {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  color:white;
+}
+
+#artCarousel {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  color:white;
+}
+
+#designCarousel {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+.click {grid-area: item2;}
+
+.click img {
+    height: 20vh;
+    grid-area: item1;
+}
+
+.clickable {
+
+}
+
+.clickable:hover {
+  cursor:crosshair;
+}
+
+.clickable:visited {
+  cursor:default;
+}
+
+.reading {
+  background-image: 
+    linear-gradient(to bottom, grey, black);
+  color:white;
+}
+.hide {
+  display:none;
+  transition: display 2s ease-in 0s;
+}
+.writing {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  line-height: 1.1;
+  padding: 0.6vh;
+}
+
+.secondstory {
+  grid-row-start:2;
+}
+.secondtext {
+  grid-row-start:2;
+}
+
+.thirdstory {
+  grid-row-start:3;
+}
+.thirdtext {
+  grid-row-start:3;
+}
+
+.gallery {
+  background-image: 
+    linear-gradient(to bottom, black,darkgrey);
+}
+
+.video:hover {
+ color: magenta;
+}
+
+.writingmedia:hover {
+ color: cyan;
+}
+
+.netart:hover {
+ color: chartreuse;
+}
+
+.collage:hover {
+ color: orange;
+}
+
+.artist:hover{
+  color: blue;
+}
+.designer:hover {
+  color:white;
+}
+.trauma:hover {
+  color: red;
+}
+.family:hover {
+  color:purple;
+}
+.gender:hover{
+  color:pink;
+}
+.corporate:hover{
+  color: violet;
+}
+
+.baroque:hover {
+  color:yellow;
+}
+
+.secondstory:hover {
+  color:royalblue;
+}
+.thirdstory:hover {
+  color:orchid;
+}
+
+.text {
+  position: relative;
+  top: 0
+  left: 0
+}
+
+
+
+/*/*Media queries*/
+
+@media screen and (max-width: 1500px) {
+.canvas {
+  grid-template-columns: 40% 1fr 1fr;
+  grid-column-gap:1vw;
+  grid-template-areas: 
+  'text1 item1 item2'
+  'text1 item3 item4'
+  'text1 item5 item6' 
+  'text1 item7 item8'  
+  'text1 item9 item10'
+  'text1 item11 item12'
+  'text1 item13 item14'
+  'text1 item15 item16'
+  'text1 item17 item18';
+}
+
+
+
+@media screen and (max-width: 1000px) {
+.canvas {
+width: 60%;
+display:block;
+}
