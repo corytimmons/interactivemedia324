@@ -275,6 +275,7 @@ a:visited {
 
 @media screen and (max-width: 1000px) {
 .canvas {
-width: 60%;
-display:block;
+	margin-left: 50px;
+	width: 60%;
+	display:block;
 }
